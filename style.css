@@ -17,6 +17,7 @@ body {
 /* =============================
    ניווט
 ============================= */
+/* עיצוב של ה- NAV שלך כמו שהיה */
 nav {
     background: #002244;
     color: white;
@@ -24,10 +25,12 @@ nav {
     flex-wrap: wrap;
     gap: 20px;
     padding: 15px;
-    justify-content: center;
+    justify-content: center; /* משאיר את התפריט במרכז */
     align-items: center;
+    position: relative; /* מאפשר ללוגו להיות ממוקם בצד */
 }
 
+/* קישורים כמו שהיה */
 nav a {
     color: white;
     text-decoration: none;
@@ -45,11 +48,22 @@ nav .donate-btn {
     border-radius: 5px;
 }
 
+/* הלוגו החדש – בלי מסגרת ובלי להזיז את העיצוב שלך */
+.site-logo {
+    width: 100px;       /* גודל קטן וחמוד */
+    height: auto;
+    position: absolute;
+    left: 20px;        /* בצד שמאל */
+    top: 50%;
+    transform: translateY(-50%); /* ממורכז אנכית */
+}
+
+
 /* =============================
    Hero
 ============================= */
 .hero {
-    background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+    background: url("./לאתר של חיים/תמונת רקע.jpg") center/cover no-repeat;
     height: 300px;
     display: flex;
     flex-direction: column;
