@@ -1,21 +1,38 @@
-body {
+/* =============================
+   בסיסי
+============================= */
+html, body {
+    height: 100%;
     margin: 0;
-    font-family: "Heebo", Arial;
+    font-family: "Heebo", Arial, sans-serif;
     background: #f7f7f7;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* מבטיח שה-footer תמיד למטה */
+}
+
+/* =============================
+   ניווט
+============================= */
 nav {
     background: #002244;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
 }
 
 nav a.active {
@@ -28,65 +45,86 @@ nav .donate-btn {
     border-radius: 5px;
 }
 
+/* =============================
+   Hero
+============================= */
 .hero {
     background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     color: white;
 }
 
+/* =============================
+   תוכן
+============================= */
 .content {
     padding: 30px;
     background: white;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
+    max-width: 1200px;
+    flex: 1; /* מאפשר ל-footer להיות בתחתית */
 }
 
+.content h2 {
+    margin-top: 0;
+}
+
+/* =============================
+   רשימות פעילות
+============================= */
 .activity-list li {
     list-style: none;
     padding: 10px 0;
     font-size: 18px;
 }
 
+/* =============================
+   כפתור תרומה
+============================= */
 .big-donate-btn {
     display: inline-block;
     padding: 12px 20px;
-    background: #d12f2f;
+    background: #d12f2f; /* אדום */
     color: white;
     font-size: 20px;
     border-radius: 10px;
     text-decoration: none;
+    transition: transform 0.3s;
 }
 
+.big-donate-btn:hover {
+    transform: scale(1.05);
+    background: #a82222; /* אדום כהה בהhover */
+}
+
+.highlight-red {
+    color: #d12f2f !important;
+    font-weight: bold !important;
+}
+
+
+
+/* =============================
+   Footer
+============================= */
 footer {
     background: #002244;
     color: white;
     padding: 15px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: auto; /* שומר את ה-footer בתחתית */
 }
+
+/* =============================
+   גלריית תמונות
+============================= */
 .images-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.activity-image {
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
-}
-
-.activity-image:hover {
-    transform: scale(1.05);
-}
-.media-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -96,6 +134,8 @@ footer {
 
 .activity-image, .activity-video {
     width: 300px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s;
@@ -103,4 +143,57 @@ footer {
 
 .activity-image:hover, .activity-video:hover {
     transform: scale(1.05);
+}
+
+/* =============================
+   רספונסיבי
+============================= */
+@media (max-width: 1200px) {
+    .activity-image, .activity-video {
+        width: 45%;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activity-image, .activity-video {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* =============================
+   כפתורי שפה
+============================= */
+.language-switcher {
+    margin: 15px;
+    text-align: center;
+}
+
+.language-switcher button {
+    padding: 6px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #002244;
+    background: #fff;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.language-switcher button.active {
+    background: #002244;
+    color: white;
+}
+
+/* =============================
+   טיפוסי כותבים ארוכים
+============================= */
+.content p, .content li {
+    line-height: 1.6;
+    word-break: break-word; /* מונע תוכן גדול מלהשבור את העיצוב */
 }

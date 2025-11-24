@@ -7,31 +7,46 @@
 </head>
 <body>
 
+<!-- כפתורי בחירת שפה -->
+<div class="language-switcher">
+    <button id="btn-he" class="active" onclick="setLanguage('he')">עברית</button>
+    <button id="btn-en" onclick="setLanguage('en')">English</button>
+</div>
+
+<!-- ניווט -->
 <nav>
-    <a href="index.html">בית</a>
-    <a href="about.html">על הישיבה</a>
-    <a href="activities.html">פעילות</a>
-    <a href="donations.html" class="active donate-btn">תרומות</a>
+    <a id="nav-home" href="index.html">בית</a>
+    <a id="nav-about" href="about.html">על הישיבה</a>
+    <a id="nav-activities" href="activities.html">פעילות</a>
+    <a id="donate-btn" href="donations.html" class="active">תרומות</a>
 </nav>
 
 <section class="content">
-    <h2>תרומות לישיבה</h2>
+    <h2 id="donate-title">תרומות לישיבה</h2>
 
-    <p>
+    <p id="donate-p1">
         תרומתכם מאפשרת להמשיך ולהחזיק עולם של תורה,
         ולתמוך בבחורים הלומדים בישיבה מדי יום במסירות ובשקידה.
     </p>
 
-    <p>
-        ניתן לתרום דרך קישור מאובטח:
+    <p id="donate-p2">
+    ניתן לתרום דרך קישור מאובטח:<br>
+   <span style="color:#d12f2f; font-weight:bold;">*יש לשים לב שזה תרומה לישיבה קטנה*</span>
+
     </p>
 
-    <a class="big-donate-btn" href="#" target="_blank">לתרומה לחץ כאן</a>
+
+
+    <a id="donate-link" class="big-donate-btn" href="https://www.matara.pro/nedarimplus/online/?mosad=7009258" target="_blank">
+        לתרומה לחץ כאן
+    </a>
 </section>
 
-<footer>
+<footer id="footer">
     © ישיבת זרע יצחק — תודה על התמיכה
 </footer>
 
+<!-- קישור לסקריפט השפה -->
+<script src="script.js"></script>
 </body>
 </html>

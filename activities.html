@@ -7,17 +7,21 @@
 </head>
 <body>
 
+<div class="language-switcher">
+    <button id="btn-he" class="active" onclick="setLanguage('he')">עברית</button>
+    <button id="btn-en" onclick="setLanguage('en')">English</button>
+</div>
+
 <nav>
-    <a href="index.html">בית</a>
-    <a href="about.html">על הישיבה</a>
-    <a href="activities.html" class="active">פעילות</a>
-    <a href="https://www.matara.pro/nedarimplus/online/?mosad=7009258" class="donate-btn">תרומות</a>
+    <a href="index.html" id="nav-home">בית</a>
+    <a href="about.html" id="nav-about">על הישיבה</a>
+    <a href="activities.html" id="nav-activities" class="active">פעילות</a>
+   <a href="donations.html" id="donate-btn" class="donate-btn">תרומות</a>
 </nav>
 
 <section class="content">
-    <h2>הפעילות בישיבה</h2>
-
-    <ul class="activity-list">
+    <h2 id="activity-title">הפעילות בישיבה</h2>
+    <ul class="activity-list" id="activity-list">
         <li>✔ שיעורי עיון יומיים</li>
         <li>✔ סדרים קבועים באווירה תורנית</li>
         <li>✔ שיעורי מוסר ושיחות חיזוק</li>
@@ -25,23 +29,30 @@
         <li>✔ תוכניות חיזוק מיוחדות בזמן בין הזמנים</li>
     </ul>
 </section>
+
 <div class="images-container">
-   <h2>תמונות מהפעילות</h2>
-    <img src="./לאתר של חיים/IMG_9739.JPG" alt="שבת בישיבה" class="activity-image">
-    <img src="./לאתר של חיים/IMG_9741.JPG" alt="פעילות חוץ" class="activity-image">
-    <img src="./לאתר של חיים/1K4A1002.JPG" alt="שיעור בישיבה" class="activity-image">
-    <img src="./לאתר של חיים/1K4A1044.JPG" alt="שבת בישיבה" class="activity-image">
-    <img src="./לאתר של חיים/1K4A1053.JPG" alt="פעילות חוץ" class="activity-image">
-    <img src="./לאתר של חיים/IMG_7634.JPG" alt="שיעור בישיבה" class="activity-image">
-    <video width="400" controls class="activity-video" autoplay muted loop>
-        <source src="./לאתר של חיים/MVI_7648.MOV" type="video/mp4" >
-        הדפדפן שלך לא תומך בסרטון.
-    </video>
+   <h2 id="images-title">תמונות מהפעילות</h2>
+   <!-- תמונות ושיעורים – נשארים כמו שהיו -->
+   <img src="./לאתר של חיים/IMG_9739.JPG" alt="שבת בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/IMG_9741.JPG" alt="פעילות חוץ" class="activity-image">
+   <img src="./לאתר של חיים/1K4A1002.JPG" alt="שיעור בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/1K4A1044.JPG" alt="שבת בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/1K4A1053.JPG" alt="פעילות חוץ" class="activity-image">
+   <img src="./לאתר של חיים/IMG-20251120-WA0024.jpeg" alt="שיעור בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/IMG_7634.JPG" alt="שיעור בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/IMG-20251120-WA0023.jpeg" alt="שיעור בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/IMG-20251120-WA0029.jpeg" alt="שיעור בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/IMG-20251120-WA0027.jpeg" alt="שיעור בישיבה" class="activity-image">
+   <img src="./לאתר של חיים/IMG-20251120-WA0032.jpeg" alt="שיעור בישיבה" class="activity-image">
+   <video width="400" controls class="activity-video" autoplay muted loop>
+       <source src="./לאתר של חיים/MVI_7648.MOV" type="video/mp4">
+       הדפדפן שלך לא תומך בסרטון.
+   </video>
 </div>
 
-<footer>
+<footer id="footer">
     © ישיבת זרע יצחק — הר נוף
 </footer>
-
+<script src="./script.js"></script>
 </body>
 </html>

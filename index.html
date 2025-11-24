@@ -7,29 +7,35 @@
 </head>
 <body>
 
+<div class="language-switcher">
+    <button id="btn-he" class="active" onclick="setLanguage('he')">עברית</button>
+    <button id="btn-en" onclick="setLanguage('en')">English</button>
+</div>
+
 <nav>
-    <a href="index.html">בית</a>
-    <a href="about.html">על הישיבה</a>
-    <a href="activities.html">פעילות</a>
-    <a href="https://www.matara.pro/nedarimplus/online/?mosad=7009258" class="donate-btn">תרומות</a>
+    <a href="index.html" id="nav-home" class="active">בית</a>
+    <a href="about.html" id="nav-about">על הישיבה</a>
+    <a href="activities.html" id="nav-activities">פעילות</a>
+   <a href="donations.html" id="donate-btn" class="donate-btn">תרומות</a>
 </nav>
 
 <header class="hero">
-    <h1>ישיבת זרע יצחק</h1>
-    <p>הר נוף, רחוב קפלן — בית מדרש לתורה וליראת שמיים</p>
+    <h1 id="hero-title">ישיבת זרע יצחק</h1>
+    <p id="hero-subtitle">הר נוף, רחוב קפלן — בית מדרש לתורה וליראת שמיים</p>
 </header>
 
 <section class="content">
-    <h2>ברוכים הבאים</h2>
-    <p>
+    <h2 id="welcome-title">ברוכים הבאים</h2>
+    <p id="welcome-p">
         ישיבת זרע יצחק שוכנת בלב שכונת הר נוף בירושלים, ופועלת על פי דרכם של גדולי התורה.
         הישיבה שמה דגש על חיבור בין לימוד עמוק, יראת שמיים ומידות טובות.
     </p>
 </section>
 
-<footer>
+<footer id="footer">
     © כל הזכויות שמורות - ישיבת זרע יצחק
 </footer>
-
+<!-- קישור לסקריפט השפה -->
+<script src="script.js"></script>
 </body>
 </html>
