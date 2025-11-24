@@ -18,8 +18,11 @@ const translations = {
         ],
         imagesTitle: "תמונות מהפעילות",
         aboutTitle: "על הישיבה",
-        aboutP1: `ישיבת זרע יצחק החדשה הוקמה על ידי הר' חיים משה גולדשטיין שליט"א ועמיתו הר' דב רודניק שליט"א ...`,
-        aboutP2: "הישיבה הוקמה במטרה ליצור מסגרת של לימוד בעיון, יראת שמיים והתקדמות אישית...",
+        aboutP1: `
+        ישיבת זרע יצחק החדשה הוקמה על ידי הר' חיים משה גולדשטיין שליט"א ועמיתו הר' דב רודניק שליט"א  בעידודו ובעצתו של הגאון הגדול רבי יונתן דיויד שליט"א ראש ישיבת פחד יצחק, ובהדרכתו האישית של תלמידו הג"ר חיים יצחק קפלן שליט"א משגיח של ישיבת חברון.
+        הישיבה שמה למטרה את צמיחת הבחורים בתורה בעמקות ובעיון ישר, עם דגש מיוחד על מידות ויחס של בין אדם לחבירו, באוירה ישיבתית ובונה.
+     הגאון הר' אברהם גולדשטיין מראשי ישיבת התפוצות ומרבני העיר העתיקה מלוה את הישיבה מידי יום במסירת שיעור לכלל הבחורים, תוך דגש מיוחד על עמקות סברא בהלכה, ופעם בשבוע בשעות הערב בשיחת מוסר על גדלות האדם והשקפה בענייני השעה ומאורעות התקופה.`,
+        aboutP2: " הישיבה הוקמה במטרה ליצור מסגרת של לימוד בעיון, יראת שמיים והתקדמות אישית. היא ידועה באווירה משפחתית, חום אנושי ומסירות של הצוות התורני.",
         donateTitle: "תרומות לישיבה",
         donateP1: "תרומתכם מאפשרת להמשיך ולהחזיק עולם של תורה, ולתמוך בבחורים הלומדים בישיבה מדי יום במסירות ובשקידה.",
         donateP2HTML: "ניתן לתרום דרך קישור מאובטח:<br><span class='highlight-red'>*יש לשים לב שזה תרומה לישיבה קטנה*</span>",
@@ -45,8 +48,10 @@ const translations = {
         ],
         imagesTitle: "Activity Photos",
         aboutTitle: "About the Yeshiva",
-        aboutP1: `Zera Yitzchak Yeshiva was founded by Rabbi Chaim Moshe Goldstein ...`,
-        aboutP2: "The yeshiva was established to create a structured environment for in-depth learning...",
+        aboutP1: `The new Zera Yitzhak Yeshiva was established by Rabbi Chaim Moshe Goldstein and his colleague Rabbi Dov Rudnik with the encouragement and advice of the great gaon Rabbi Yonatan David, head of the Pahad Yitzhak Yeshiva, and with the personal guidance of his student Rabbi Chaim Yitzhak Kaplan, supervisor of the Hebron Yeshiva.
+The yeshiva aims to develop the youth in Torah in depth and with a sincere eye, with a special emphasis on the virtues and relationship between a person and his fellow man, in a constructive and yeshiva atmosphere.
+The gaon Rabbi Avraham Goldstein, one of the heads of the Diaspora Yeshiva and rabbis of the Old City, accompanies the yeshiva every day by giving a lesson to all the youth, with a special emphasis on the depths of understanding in Halacha, and once a week in the evening with a moral conversation on the greatness of man and a perspective on the affairs of the time and the events of the period.`,
+        aboutP2: "The yeshiva was established with the goal of creating a framework for careful study, reverence for God, and personal progress.It is known for its family atmosphere, human warmth, and the dedication of the Torah staff.",
         donateTitle: "Donations",
         donateP1: "Your donation helps support a world of Torah and the students studying at the yeshiva daily.",
         donateP2HTML: "You can donate via a secure link.<br><span class='highlight-red'>*Please note that this donation is for the small yeshiva*</span>",
